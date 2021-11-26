@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./terzo-componente.component.css']
 })
 export class TerzoComponenteComponent implements OnInit {
-
-  constructor() { }
-
+  burzum: string;
+  constructor() { 
+    this.burzum = "Terzo"
+  }
   ngOnInit(): void {
   }
 
