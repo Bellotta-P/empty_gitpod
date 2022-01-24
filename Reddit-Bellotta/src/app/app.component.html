@@ -11,11 +11,15 @@
         <label for="link">Link:</label>
         <input name="link" #newlink class="form-control">
       </div>
-      <br>
     <button (click)="addArticle(newtitle, newlink)" class="btn btn-primary">
       Submit link
     </button>
   </form>
-  <app-article></app-article>
 </div>
 
+<div class="container">
+  <!-- start adding here -->
+  <app-article
+    *ngFor="let art of articles" [article]="art">
+  </app-article>
+</div>
