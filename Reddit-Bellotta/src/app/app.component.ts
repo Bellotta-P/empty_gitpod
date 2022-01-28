@@ -20,4 +20,7 @@ export class AppComponent {
     this.articles.push(new Article('Angular 2', 'http://angular.io', 3));
     return false;
   }
+  sortedArticles(): Article[] {
+    return this.articles.sort((a: Article, b: Article) => b.votes - a.votes);
+  }
 }
