@@ -25,3 +25,9 @@ GERARCHIA COMPONENTI
 APP COMPONENTS.TS/HTML/CSS
   Nuovo comp
     Nuovo comp 
+
+link per finire il progetto reddit
+
+https://w3schools.com/cssref/pr_class_visibility.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_visibility
+https://stackoverflow.com/questions/35269179/angular-conditional-class-with-ngclass
