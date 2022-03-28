@@ -18,7 +18,7 @@ GIT COMMIT -M
 GIT PUSH ORIGIN MASTER
 
 CREARE IL SERVER
-ng serve --disable-check
+ng serve --disable-host-check
 
 APP ANGULAR
 Angular è un FRAMEWORK per Sviluppare 
