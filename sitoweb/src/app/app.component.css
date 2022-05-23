@@ -7,6 +7,45 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .clima_mite{
+    font-size: 20px;
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    padding: 22.7px;
+
+    width: 230px;
+    /* border: 2px solid #4CAF50; */
+  }
+
+  .clima_caldo{
+    font-size: 20px;
+    border: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    overflow: hidden; 
+    padding: 17.9px;
+    
+    width: 230px;
+    /* border: 2px solid #4CAF50; */
+  }
+
+  .clima_freddo{
+    font-size: 20px;
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;   
+    padding: 22px;
+
+    width: 230px;
+     /* border: 2px solid #4CAF50; */
+  }
+
   h1,
   h2,
   h3,
@@ -32,7 +71,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: 	#006400;
+    background-color: 	#ff4500;
     color: white;
     font-weight: 600;
   }
@@ -75,7 +114,7 @@
   }
 
   .card svg.material-icons path {
-    fill: #888;
+    fill: #D4AF37;
   }
 
   .card-container {
@@ -88,7 +127,7 @@
   .card {
     all: unset;
     border-radius: 4px;
-    border: 1px solid #eee;
+    border: 1px solid #ff4500;
     background-color: #fafafa;
     height: 40px;
     width: 200px;
@@ -112,7 +151,7 @@
   }
 
   .card-container .card:not(.highlight-card) {
-    cursor: pointer;
+    cursor: crosshair;
   }
 
   .card-container .card:not(.highlight-card):hover {
@@ -121,11 +160,11 @@
   }
 
   .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
+    fill: rgb(0,0,205);
   }
 
   .card.highlight-card {
-    background-color: #006400;
+    background-color: #ff4500;
     color: white;
     font-weight: 600;
     border: none;
@@ -156,12 +195,12 @@
   a,
   a:visited,
   a:hover {
-    color: #006400;
+    color: #ff4500;
     text-decoration: none;
   }
 
   a:hover {
-    color: #006400;
+    color: #ff4500;
   }
 
   .terminal {
@@ -192,7 +231,7 @@
 
   .terminal pre {
     font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-    color: white;
+    color: #ff4500;
     padding: 0 1rem 1rem;
     margin: 0;
   }
@@ -203,7 +242,7 @@
     border-radius: 40px;
     margin: 8px;
     background-color: white;
-    border: 1px solid #006400;
+    border: 1px solid #ff4500;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,12 +269,12 @@
   }
 
   .github-star-badge {
-    color: #24292e;
+    color: #D4AF37;
     display: flex;
     align-items: center;
     font-size: 12px;
     padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
+    border: 1px solid rgba(212,175,55);
     border-radius: 3px;
     background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
     margin-left: 4px;
