@@ -63,6 +63,48 @@
      /* border: 2px solid #4CAF50; */
   }
 
+  .Nome_Regione#2{
+    color: rgb(0,0,205);
+    font-size: 20px;
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;   
+    padding: 22px;
+
+    width: 230px;
+     /* border: 2px solid #4CAF50; */
+  }
+
+  .Nome_Regione#3{
+    color: rgb(0,0,205);
+    font-size: 20px;
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;   
+    padding: 22px;
+
+    width: 230px;
+     /* border: 2px solid #4CAF50; */
+  }
+
+  .Nome_Regione#4{
+    color: rgb(0,0,205);
+    font-size: 20px;
+    border: none;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;   
+    padding: 22px;
+
+    width: 230px;
+     /* border: 2px solid #4CAF50; */
+  }
+
   h1,
   h2,
   h3,
