@@ -10,8 +10,12 @@ export class ClimaService {
 
   constructor(private http :HttpClient) { }
 
-  getData(){
-    return this.http.get(AppSettings._API +"df");
+  getData(Clima : any){
+    return this.http.get(AppSettings._API +"df/" + Clima);
+  }
+
+  getReg(Regione : any){
+    return this.http.get(AppSettings._API +"df2/" + Regione);
   }
 
   public addUser(msg : any){

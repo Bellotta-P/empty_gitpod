@@ -52,22 +52,22 @@
   <div class="card-container">
     <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
       <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span> <button class="Nome_Regione#1" type="button"  (click)="clickEventNome_Regione_1()" > Nome_Regione#1‎ </button> </span>
+      <span> <button class="Nome_Regione#1" type="button"  (click)="clickEventNome_Regione_1()" > {{reg0.DEN_REG}}‎ </button> </span>
     </button>
 
     <button class="card card-small" (click)="selection.value = 'material'" tabindex="0">
       <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span> <button class="Nome_Regione#2" type="button"  (click)="clickEventNome_Regione_2()" > Nome_Regione#2‎ </button> </span>
+      <span> <button class="Nome_Regione#2" type="button"  (click)="clickEventNome_Regione_2()" > {{reg1.DEN_REG}}‎ </button> </span>
     </button>
 
     <button class="card card-small" (click)="selection.value = 'pwa'" tabindex="0">
       <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span> <button class="Nome_Regione#3" type="button"  (click)="clickEventNome_Regione_3()" > Nome_Regione#3‎ </button> </span>
+      <span> <button class="Nome_Regione#3" type="button"  (click)="clickEventNome_Regione_3()" > {{reg2.DEN_REG}}‎ </button> </span>
     </button>
 
     <button class="card card-small" (click)="selection.value = 'dependency'" tabindex="0">
       <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-      <span> <button class="Nome_Regione#4" type="button"  (click)="clickEventNome_Regione_4()" > Nome_Regione#4‎ </button> </span>
+      <span> <button class="Nome_Regione#4" type="button"  (click)="clickEventNome_Regione_4()" > {{reg3.DEN_REG}}‎ </button> </span>
     </button>
   </div>
 
@@ -98,4 +98,4 @@
   </svg>
 
 </div>
-{{resp | json}}
+

@@ -8,61 +8,86 @@ import { ClimaService } from './clima.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  msg:string | undefined; 
+  msg:string | undefined;
+  msg2:string | undefined; 
   title = 'sitoweb';
   resp: any;
+  resp2: any;
+  reg0: any;
+  reg1: any;
+  reg2: any;
+  reg3: any;
+  
   
   constructor( private ClimaService: ClimaService) { }
 
   ngOnInit(): void {
-    this.getData();
+    
   }
 
   clickEventMite(){
     this.msg='Mite';
+    this.getData();
+    this.reg0 = this.resp[0]
+    this.reg1 = this.resp[1]
+    this.reg2 = this.resp[2]
+    this.reg3 = this.resp[3]
+    console.log( this.reg0.DEN_REG)
     return this.msg;
     console.log(this.resp)
   }
 
   clickEventFreddo(){
     this.msg='Freddo';
+    this.getData();
+    
     return this.msg;
     console.log(this.resp)
   }
 
   clickEventCaldo(){
     this.msg='Caldo';
+    this.getData();
     return this.msg;
     console.log(this.resp)
   }
 
   clickEventNome_Regione_1(){
-    this.msg='Regione_1';
-    return this.msg;
-    console.log(this.resp)
+    this.msg2 = this.reg0.DEN_REG;
+    this.getReg();
+    console.log(this.resp2)
+    return this.msg2;
+    
   }
 
   clickEventNome_Regione_2(){
-    this.msg='Regione_2';
-    return this.msg;
+    this.msg2 = this.reg1.DEN_REG;
+    this.getReg();
+    return this.msg2;
     console.log(this.resp)
   }
 
   clickEventNome_Regione_3(){
-    this.msg='Regione_3';
-    return this.msg;
+    this.msg2 = this.reg2.DEN_REG;
+    this.getReg();
+    return this.msg2;
     console.log(this.resp)
   }
 
   clickEventNome_Regione_4(){
-    this.msg='Regione_4';
-    return this.msg;
+    this.msg2 = this.reg3.DEN_REG;
+    this.getReg();
+    return this.msg2;
     console.log(this.resp)
   }
 
   
   getData(): void {
-		this.ClimaService.getData().subscribe(resp => this.resp = resp);
+		this.ClimaService.getData(this.msg).subscribe(resp => this.resp = resp);
+	}
+  
+  getReg(): void {
+		this.ClimaService.getReg(this.msg2).subscribe(resp2 => this.resp2 = resp2);
 	}
 }
 
