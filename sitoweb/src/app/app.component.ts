@@ -33,6 +33,7 @@ export class AppComponent {
     this.reg2 = this.resp[2]
     this.reg3 = this.resp[3]
     console.log( this.reg0.DEN_REG)
+
     return this.msg;
     console.log(this.resp)
   }
@@ -40,6 +41,11 @@ export class AppComponent {
   clickEventFreddo(){
     this.msg='Freddo';
     this.getData();
+    this.reg0 = this.resp[0]
+    this.reg1 = this.resp[1]
+    this.reg2 = this.resp[2]
+    this.reg3 = this.resp[3]
+    console.log( this.reg0.DEN_REG)
     
     return this.msg;
     console.log(this.resp)
@@ -48,6 +54,12 @@ export class AppComponent {
   clickEventCaldo(){
     this.msg='Caldo';
     this.getData();
+    this.reg0 = this.resp[0]
+    this.reg1 = this.resp[1]
+    this.reg2 = this.resp[2]
+    this.reg3 = this.resp[3]
+    console.log( this.reg0.DEN_REG)
+    
     return this.msg;
     console.log(this.resp)
   }
