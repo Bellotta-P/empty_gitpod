@@ -20,7 +20,12 @@ export class MapComponent implements AfterViewInit {
   @Input()
   regione : string = "";
   ngOnChanges(changes: SimpleChanges) {
-      this.initMakrkers();
+    this.map.eachLayer((layer : any) => {
+      layer.remove();
+    });
+    this.tiles.addTo(this.map);
+
+    this.initMakrkers();
     };
 
   private initMap(): void {
