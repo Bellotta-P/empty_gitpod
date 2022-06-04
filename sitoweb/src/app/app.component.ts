@@ -8,8 +8,8 @@ import { ClimaService } from './clima.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  msg:string | undefined;
-  msg2:string | undefined; 
+  msg: string = "";
+  msg2: string = "";
   title = 'sitoweb';
   resp: any;
   resp2: any;
@@ -66,7 +66,6 @@ export class AppComponent {
 
   clickEventNome_Regione_1(){
     this.msg2 = this.reg0.DEN_REG;
-    this.getReg();
     console.log(this.resp2)
     return this.msg2;
     
@@ -74,21 +73,18 @@ export class AppComponent {
 
   clickEventNome_Regione_2(){
     this.msg2 = this.reg1.DEN_REG;
-    this.getReg();
     return this.msg2;
     console.log(this.resp)
   }
 
   clickEventNome_Regione_3(){
     this.msg2 = this.reg2.DEN_REG;
-    this.getReg();
     return this.msg2;
     console.log(this.resp)
   }
 
   clickEventNome_Regione_4(){
     this.msg2 = this.reg3.DEN_REG;
-    this.getReg();
     return this.msg2;
     console.log(this.resp)
   }
@@ -96,10 +92,6 @@ export class AppComponent {
   
   getData(): void {
 		this.ClimaService.getData(this.msg).subscribe(resp => this.resp = resp);
-	}
-  
-  getReg(): void {
-		this.ClimaService.getReg(this.msg2).subscribe(resp2 => this.resp2 = resp2);
 	}
 }
 

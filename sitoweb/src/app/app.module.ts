@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ClimaService } from './clima.service';
 import { MapComponent } from './map/map.component';
+import { MarkerService } from './marker.service';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { MapComponent } from './map/map.component';
     HttpClientModule,
     BrowserModule
   ],
-  providers: [ClimaService],
+  providers: [ClimaService,MarkerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

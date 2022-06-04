@@ -1,7 +1,7 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Input, SimpleChanges } from '@angular/core';
 import * as L from 'leaflet';
-//import { MarkerService } from '../marker.service';
-//this.markerService.makeCapitalMarkers(this.map);
+import { MarkerService } from '../marker.service';
+
 
 
 @Component({
@@ -16,16 +16,29 @@ export class MapComponent implements AfterViewInit {
     minZoom: 3,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   });
+
+  @Input()
+  regione : string = "";
+  ngOnChanges(changes: SimpleChanges) {
+      this.initMakrkers();
+    };
+
   private initMap(): void {
     this.map = L.map('map', {
-      center: [ 39.8282, -98.5795 ],
-      zoom: 3
+      center: [ 41.9027835, 12.4963655 ],
+      zoom: 5
     });
     
     this.tiles.addTo(this.map);
   }
+  private initMakrkers(): void {
+    if ( this.regione !== "") 
+    {
+      this.markerService.makeHotelMarkers(this.map,this.regione);
+    }
+  }
  
-  constructor() { }
+  constructor(private markerService : MarkerService) { }
 
   ngAfterViewInit(): void {
     this.initMap();
